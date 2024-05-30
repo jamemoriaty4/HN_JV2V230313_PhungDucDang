@@ -2,7 +2,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Danh sách Category</title>
+    <title>Danh sách sinh vien</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -13,6 +13,14 @@
 </head>
 <body>
 <div class="container">
+    <form class="form-inline">
+        <div class="form-group">
+            <label>
+                <input type="text" name="keyword" th:value="${keyword}" class="form-control" placeholder="nhập từ khóa" />
+            </label>
+        </div>
+        <button type="submit" class="btn btn-outline-primary">Tìm kiếm</button>
+    </form>
     <div class="row">
         <div class="col-lg-8">
             <h1>Danh sách sinh viên</h1>
