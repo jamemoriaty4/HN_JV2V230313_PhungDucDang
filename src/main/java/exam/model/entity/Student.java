@@ -2,7 +2,8 @@ package exam.model.entity;
 
 import javax.persistence.*;
 import javax.xml.crypto.Data;
-import java.util.Date;
+import java.sql.Date;
+
 
 @Entity
 public class Student {

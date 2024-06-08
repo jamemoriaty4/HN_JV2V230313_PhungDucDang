@@ -35,7 +35,6 @@ public class StudentController {
 
     @PostMapping("/create-student")
     public String save(@ModelAttribute("createStudent") Student student, @RequestParam("fileImage") MultipartFile file) {
-        System.out.println("loi them moi");
         studentService.saveFile(file, student);
         studentService.create(student);
         return "redirect:student";

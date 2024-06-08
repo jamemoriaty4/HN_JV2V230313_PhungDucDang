@@ -96,6 +96,6 @@ public class AppConfig implements WebMvcConfigurer, ApplicationContextAware {
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/**")
-                .addResourceLocations("file:D:\\Exam_JavaCore_WeWebapp\\exam\\src\\main\\webapp\\uploads");
+                .addResourceLocations("file:D:\\Exam_JavaCore_WeWebapp\\exam\\src\\main\\webapp\\uploads\\");
     }
 }
